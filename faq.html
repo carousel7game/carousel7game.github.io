@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ and support | Carousel 7: Mishandled</title>
+<meta name="description" content="Answers about Carousel 7: Mishandled: what it costs, restoring your purchase, saves, and how to get help.">
+<link rel="canonical" href="https://carousel7game.github.io/faq.html">
+<meta name="theme-color" content="#12141a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FAQ and support | Carousel 7: Mishandled">
+<meta property="og:description" content="Answers about Carousel 7: Mishandled: what it costs, restoring your purchase, saves, and how to get help.">
+<meta property="og:image" content="https://carousel7game.github.io/assets/img/social-card.jpg">
+<meta property="og:url" content="https://carousel7game.github.io/faq.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="assets/css/site.css?v=1a4c9d9f">
+</head>
+<body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="./"><img src="assets/img/icon-512.png" alt="" width="40" height="40"><span>Carousel 7<i>Mishandled</i></span></a>
+  <nav class="nav-links" aria-label="Site"><a href="./">Home</a><a href="faq.html" aria-current="page">FAQ</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</div></header>
+<main>
+
+<section class="band top"><div class="wrap narrow">
+  <h1>Questions and answers</h1>
+  <div class="faq"><details><summary>What is Carousel 7: Mishandled?</summary><p>A first-person baggage sorting game for iPhone. You pick bags up, read their tags, check the board, and put each one down the right chute. What you earn buys skills.</p></details><details><summary>What does it cost?</summary><p>The game is free to download, and Receiving, the first area, is free for as long as you like. One purchase opens the other four areas. There are no subscriptions and nothing else to buy.</p></details><details><summary>I bought the full game. How do I get it back on a new phone?</summary><p>Open the unlock screen (tap the card reader by the roll-up door in Receiving) and choose Restore purchase. Use the same Apple ID you bought it with.</p></details><details><summary>Does anything happen while I am away?</summary><p>No. Nothing is earned, nothing is lost, and no flight leaves while the game is closed. When you come back, the building is exactly as you left it.</p></details><details><summary>Where is my progress saved?</summary><p>On your phone. The game has no account and no cloud save, so deleting the app deletes your progress. Your purchase is kept by Apple and can always be restored.</p></details><details><summary>A bag came back with a note. What did I do wrong?</summary><p>It went down the wrong chute. The bag comes back and the note says where it should have gone. The board changes during a shift, so check it again.</p></details><details><summary>Is Pine Hollow Regional a real airport?</summary><p>No. The airport, the airlines, the flights, and the passengers are all made up.</p></details><details><summary>Does the game use Game Center?</summary><p>Yes, if you are signed in: for leaderboards and achievements only. The game works the same without it.</p></details></div>
+  <h2 id="contact">Contact</h2>
+  <p>For help, a bug, feedback, or a refund question, send us a message here. For a bug, it helps to say which iPhone you have, which iOS version, and what you were doing when it went wrong. Replies usually come within a few days.</p>
+  <form class="contact" id="contact-form" action="https://formsubmit.co/squiresproducts@gmail.com" method="POST" enctype="multipart/form-data">
+    <input type="hidden" name="_subject" id="subject-line" value="Carousel 7 feedback">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://carousel7game.github.io/thanks.html">
+    <input class="hp" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <div class="pair">
+      <label><span class="lt">Name</span><input id="name" name="name" autocomplete="name" maxlength="120" required></label>
+      <label><span class="lt">Email <i>(so we can reply; we never share it)</i></span><input id="email" type="email" name="email" autocomplete="email" maxlength="200" required></label>
+    </div>
+    <label><span class="lt">Subject</span><select id="topic" name="topic" required><option value="">Choose one…</option><option>Bug or crash</option><option>Purchase or restore</option><option>Idea or suggestion</option><option>Something else</option></select></label>
+    <label><span class="lt">Message</span><textarea id="message" name="message" rows="6" required maxlength="5000" placeholder="What happened? If it is a bug, what were you doing just before?"></textarea></label>
+    <div class="pair">
+      <label><span class="lt">iPhone model <i>(optional)</i></span><input id="device" name="device" placeholder="e.g. iPhone 16" maxlength="120"></label>
+      <label><span class="lt">iOS version <i>(optional)</i></span><input id="ios" name="ios_version" placeholder="e.g. 26.1" maxlength="40"><small>Settings › General › About › iOS Version</small></label>
+    </div>
+    <label><span class="lt">Screenshot <i>(optional, up to 10 MB)</i></span><input id="shot" type="file" name="attachment" accept="image/*"></label>
+    <div class="send"><button class="btn primary" type="submit">Send message</button></div>
+  </form>
+  <script>
+  (function () {
+    // A link can fill in the form: faq.html?device=...&ios=...&topic=...#contact
+    var q = new URLSearchParams(location.search);
+    ['device', 'ios'].forEach(function (k) { var v = q.get(k); if (v) document.getElementById(k).value = v; });
+    var topic = q.get('topic'), sel = document.getElementById('topic');
+    if (topic) for (var i = 0; i < sel.options.length; i++) if (sel.options[i].text === topic) sel.selectedIndex = i;
+    document.getElementById('contact-form').addEventListener('submit', function () {
+      var n = document.getElementById('name').value;
+      document.getElementById('subject-line').value = 'Carousel 7: ' + (sel.value || 'Feedback') + (n ? ' from ' + n : '');
+    });
+  })();
+  </script>
+  <p>Refunds for App Store purchases are handled by Apple at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+</div></section>
+
+</main>
+<footer class="site"><div class="wrap">
+  <div><p><b>Carousel 7: Mishandled</b> by SquiresProduct</p><p>Questions or a bug? <a href="faq.html#contact">Send us a message</a>.</p></div>
+  <div class="links"><a href="./">Home</a><a href="faq.html">FAQ</a><a href="faq.html#contact">Contact</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></div>
+  <p class="fine">Pine Hollow Regional is a made-up airport, and every airline, flight, and passenger in the game is made up too. Carousel 7: Mishandled is not affiliated with any airport, airline, or baggage handler. &copy; 2026 SquiresProduct.</p>
+</div></footer>
+</body>
+</html>
